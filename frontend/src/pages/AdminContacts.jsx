@@ -7,7 +7,7 @@ export const AdminContacts = () => {
 
   const getAllContactsData = async () => {
     try {
-      const promise = await fetch("http://localhost:8000/api/admin/contacts", {
+      const promise = await fetch("https://itconnect-backend-idyu.onrender.com/api/admin/contacts", {
         method: "GET",
         headers: {
           Authorization: token,
@@ -22,7 +22,7 @@ export const AdminContacts = () => {
 
   const deleteContact = async(id)=>{
     try {
-      const promise = await fetch(`http://localhost:8000/api/admin/contacts/delete/${id}`,{
+      const promise = await fetch(`https://itconnect-backend-idyu.onrender.com/api/admin/contacts/delete/${id}`,{
         method:"DELETE",
         headers: {
           Authorization: token,

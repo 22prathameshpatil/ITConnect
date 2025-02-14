@@ -25,7 +25,7 @@ export const AuthProvider = ({ children }) => {
 
   const userAuthentication = async () => {
     try {
-      const response = await fetch("http://localhost:8000/api/auth/user", {
+      const response = await fetch("https://itconnect-backend-idyu.onrender.com/api/auth/user", {
         method: "GET",
         headers: {
           Authorization: token,
@@ -46,7 +46,7 @@ export const AuthProvider = ({ children }) => {
 
   const getServices = async () => {
     try {
-      const response = await fetch("http://localhost:8000/api/service", {
+      const response = await fetch("https://itconnect-backend-idyu.onrender.com/api/service", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

@@ -28,7 +28,7 @@ export const AdminUpdateUser = () => {
   const getUserData = async () => {
     try {
       const response = await fetch(
-        `http://localhost:8000/api/admin/users/${id}`,
+        `https://itconnect-backend-idyu.onrender.com/api/admin/users/${id}`,
         {
           method: "GET",
           headers: {
@@ -51,7 +51,7 @@ export const AdminUpdateUser = () => {
     e.preventDefault();
     try {
       const response = await fetch(
-        `http://localhost:8000/api/admin/users/update/${id}`,
+        `https://itconnect-backend-idyu.onrender.com/api/admin/users/update/${id}`,
         {
           method: "PATCH",
           headers: {

@@ -19,7 +19,7 @@ export const AdminUsers = () => {
 
   const getAllUsersData = async () => {
     try {
-      const response = await fetch("http://localhost:8000/api/admin/users", {
+      const response = await fetch("https://itconnect-backend-idyu.onrender.com/api/admin/users", {
         method: "GET",
         headers: {
           Authorization: token,
@@ -40,7 +40,7 @@ export const AdminUsers = () => {
   const deleteUser = async (id) => {
     try {
       const response = await fetch(
-        `http://localhost:8000/api/admin/users/delete/${id}`,
+        `https://itconnect-backend-idyu.onrender.com/api/admin/users/delete/${id}`,
         {
           method: "DELETE",
           headers: {
