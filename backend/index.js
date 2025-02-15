@@ -13,7 +13,7 @@ const cors = require("cors");
 const handleCheckAdmin = require("./middlewares/admin-middleware");
 
 const corsOptions = {
-  origin: "http://localhost:5173",
+  origin: "https://itconnect-frontend.onrender.com",
   methods:"GET,POST,PUT,DELETE,PATCH,HEAD",
   credentials: true,
 };
